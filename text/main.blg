@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: iso690.bst
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+Database file #1: mybibliographyfile.bib
+Warning--entry type for "ffnbrilliant" isn't style-file defined
+--line 163 of file mybibliographyfile.bib
+Warning--entry type for "lstmcell_img" isn't style-file defined
+--line 487 of file mybibliographyfile.bib
+Warning--entry type for "stanford" isn't style-file defined
+--line 561 of file mybibliographyfile.bib
+Warning--entry type for "decimation" isn't style-file defined
+--line 568 of file mybibliographyfile.bib
+Warning--entry type for "retopology" isn't style-file defined
+--line 575 of file mybibliographyfile.bib
+Warning--entry type for "topology_animation" isn't style-file defined
+--line 582 of file mybibliographyfile.bib
+Warning--I didn't find a database entry for "stnaford"
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Warning--to sort, need author or key in mlmastery
+You've used 24 entries,
+            3146 wiz_defined-function locations,
+            785 strings with 9311 characters,
+and the built_in function-call counts, 8843 in all, are:
+= -- 660
+> -- 259
+< -- 9
++ -- 131
+- -- 74
+* -- 435
+:= -- 1043
+add.period$ -- 70
+call.type$ -- 24
+change.case$ -- 97
+chr.to.int$ -- 0
+cite$ -- 25
+duplicate$ -- 832
+empty$ -- 838
+format.name$ -- 81
+if$ -- 1912
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 217
+newline$ -- 96
+num.names$ -- 46
+pop$ -- 523
+preamble$ -- 1
+purify$ -- 84
+quote$ -- 0
+skip$ -- 290
+stack$ -- 0
+substring$ -- 242
+swap$ -- 433
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 86
+warning$ -- 1
+while$ -- 56
+width$ -- 26
+write$ -- 219
+(There were 8 warnings)

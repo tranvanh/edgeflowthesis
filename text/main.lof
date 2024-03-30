@@ -1,0 +1,34 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {czech}{}
+\babel@toc {english}{}
+\babel@toc {czech}{}
+\babel@toc {english}{}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Perceptron \cite {matous}\relax }}{4}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Comparison between step function and sigmoid function\relax }}{5}{figure.caption.9}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Step function}}}{5}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Sigmoid function}}}{5}{subfigure.2.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Hyperbolic tangent \cite {matous}\relax }}{6}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Rectified Linear Unit \cite {matous}\relax }}{6}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Fully connected Feed-forward Neural Network \cite {matous}\relax }}{8}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Convolution of an 5x5x1 image with 3x3x1 kernel \cite {compguideCnn}\relax }}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Types of pooling \cite {compguideCnn}\relax }}{10}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Layer-2 embedding applied on node $A$ aggregating infromation from its neighborhood \cite {stanford}\relax }}{11}{figure.caption.15}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Neural network of each node for given input node graph \cite {stanford}\relax }}{12}{figure.caption.16}%
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Elements of mesh object \cite {stanford}\relax }}{13}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Stanford bunny model made of mesh \cite {stanford}\relax }}{14}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Stanford bunny model made of voxels \cite {lstmcell_img}\relax }}{14}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Stanford bunny model made of point clouds \cite {stnaford}\relax }}{15}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces A mesh object constructed with 2 different edge flows \cite {decimation}\relax }}{16}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Deformation of the same object with different edge flow \cite {topology_animation}\relax }}{16}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Decimation applied on shirt 3D mesh \cite {decimation}\relax }}{17}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Retopology surface manually created lizard 3D mesh \cite {retopology}\relax }}{18}{figure.caption.24}%
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
