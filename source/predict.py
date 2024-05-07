@@ -21,16 +21,20 @@ else:
 	device = torch.device("cpu")
 
 def main(args):
-
-	model = load_model(args.model, args.weights)
+	print("Loading model")
+	model = load_model(model_path, weights_path)
 	model = model.to(device)
+	print("model Loaded")
 
+	print("Loading target mesh")
 	target, scale, center = load_obj_wrapper(args.target)
 
 	x, edge_index = torch.concat((target.verts_packed(), target.verts_normals_packed()), axis=1), target.edges_packed()
 	edge_index_transpose = torch.transpose(edge_index, 0, 1)
 	data = Data(x.to(device), edge_index_transpose)
+	print("target Loaded")
 
+	print("Predicting")
 	# Create a primitive sphere according to the number of points in the target mesh
 	create_dir("tmp")
 	gen_sphere(x.shape[0] , "tmp")
@@ -39,30 +43,26 @@ def main(args):
 	model.eval()
 	pred = model(data)
 	new_mesh = sphere_mesh.offset_verts(pred)
-
-	save_obj_wrapper(new_mesh, "predicted.obj", scale, center)
-
+	predicted_path = "predicted.obj"
+	save_obj_wrapper(new_mesh, predicted_path, scale, center)
+	print(f"Pridection saved at \'{predicted_path}\'")
 
 if __name__ == "__main__":
 	pars = ArgumentParser()
 	pars.add_argument('--target',
-	                  type=str,
-	                  help='path to target mesh')
+					  type=str,
+					  help='path to target mesh')
 	pars.add_argument('--model',
-	                  type=str,
-	                  help='path to test data')
+					  type=str,
+					  default="model/best_model.pth",
+					  help='path to test data')
 	pars.add_argument('--weights',
-	                  type=str,
-	                  help='path to model weights')
+					  type=str,
+					  default="data/best_model_weights.pth",
+					  help='path to model weights')
 
 	args = pars.parse_args()
 	if args.target == None:
 		raise Exception("Target file was not specified")
-
-	if args.model == None:
-		raise Exception("Path to model was not specified")
-
-	if args.weights == None:
-		raise Exception("Path to weights was not specified")
 
 	main(pars.parse_args())
