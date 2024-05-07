@@ -4,7 +4,7 @@ import numpy as np
 from pytorch3d.structures import Meshes, Pointclouds
 from os.path import isfile, join
 
-from utils.io_wrappers import (
+from utils.io_operations import (
     create_dir,
     load_obj_wrapper,
     load_ply_wrapper,

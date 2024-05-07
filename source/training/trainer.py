@@ -1,11 +1,11 @@
 import torch
+import torch.nn.functional as F
 
 from tqdm import tqdm
-import torch.nn.functional as F
 from torch_geometric.loader import DataLoader
 
 from training.gnn_model import GNN
-from utils.io_wrappers import save_model, create_dir
+from utils.io_operations import save_model, create_dir
 
 if torch.cuda.is_available():
 	device = torch.device("cuda:0")
@@ -50,7 +50,7 @@ class Trainer(object):
 		current_min =  float('inf')
 		create_dir("model")
 		for i in range(self.epochs):
-			print(f"EPOCH {i}")
+			print(f"EPOCH {i+1}/{self.epochs}")
 			current_min = self.train_loop(current_min)
 
 	def evaluate(self):
@@ -62,7 +62,7 @@ class Trainer(object):
 
 		with torch.no_grad():
 			for X, y in self.test_loader:
-				out = model(X)
+				out = self.model(X)
 				test_loss += F.mse_loss(out, y[0]).item()
 
 		test_loss /= num_batches

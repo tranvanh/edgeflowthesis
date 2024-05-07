@@ -4,7 +4,7 @@ import torch
 
 from torch.utils.data import Dataset
 from torch_geometric.data import Data
-from utils.io_wrappers import load_obj_wrapper
+from utils.io_operations import load_obj_wrapper
 
 if torch.cuda.is_available():
 	device = torch.device("cuda:0")
