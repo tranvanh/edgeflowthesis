@@ -36,25 +36,25 @@ if __name__ == "__main__":
 	pars.add_argument('--train-data',
 					  type=str,
 					  default="data/train",
-					  help='path to train data')
+					  help='[path to train data]{/data/train}')
 	pars.add_argument('--test-data',
 					  type=str,
 					  default="data/test",
-					  help='path to test data')
+					  help='[path to test data]{data/test}')
 	pars.add_argument('--weights',
 					  type=str,
-					  help='path to model weights')
+					  help='[path to model weights]')
 	pars.add_argument('--epochs',
 					  type=int,
 					  default=500,
-					  help='path to model weights')
+					  help='[path to model weights]{500}')
 	pars.add_argument('--skip-training',
 					  type=bool,
 					  default=False,
-					  help='skiping training the model')
+					  help='[skiping training the model]{False}')
 	pars.add_argument('--evaluate',
 					  type=bool,
 					  default=True,
-					  help='evaluate the model')
+					  help='[evaluate the model]{True}')
 
 	main(pars.parse_args())

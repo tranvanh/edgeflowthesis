@@ -49,17 +49,17 @@ if __name__ == "__main__":
 	pars.add_argument('--data-path',
 					  type=str,
 					  default="shrec",
-					  help='path to train data')
+					  help='[path to train data]{/shrec}')
 	pars.add_argument('--iterations',
 					  type=int,
 					  default=80000,
-					  help='number of iterations')
+					  help='[number of iterations]{80000}')
 	pars.add_argument('--point-limits',
 					  type=int,
 					  default=10000,
-					  help='maximal number of points')
+					  help='[maximal number of points]{10000}')
 	pars.add_argument('--learning-rate',
 					  type=float,
 					  default=0.001,
-					  help='minimization rate')
+					  help='[minimization rate]{0.001}')
 	main(pars.parse_args())

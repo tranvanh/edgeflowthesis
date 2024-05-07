@@ -51,15 +51,15 @@ if __name__ == "__main__":
 	pars = ArgumentParser()
 	pars.add_argument('--target',
 					  type=str,
-					  help='path to target mesh')
+					  help='<path to target mesh>')
 	pars.add_argument('--model',
 					  type=str,
 					  default="model/best_model.pth",
-					  help='path to test data')
+					  help='[path to test data]{/model/best_model.pth}')
 	pars.add_argument('--weights',
 					  type=str,
 					  default="data/best_model_weights.pth",
-					  help='path to model weights')
+					  help='[path to model weights]{/data/best_model_weights.pth}')
 
 	args = pars.parse_args()
 	if args.target == None:
