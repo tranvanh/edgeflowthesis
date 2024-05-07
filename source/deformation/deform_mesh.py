@@ -44,7 +44,7 @@ def mesh_loss(predicted, gt, sample_volume, w_normal, w_laplacian):
 
 def fit_src_to_trg(file_name, src_mesh, trg_mesh):
     deform_verts = torch.full(src_mesh.verts_packed().shape, 0.0, device=device, requires_grad=True)
-    optimizer = torch.optim.Adam([deform_verts], lr=0.0001)
+    optimizer = torch.optim.Adam([deform_verts], lr=0.001)
 
     # Number of optimization steps
     Niter = 80000

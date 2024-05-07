@@ -39,6 +39,22 @@ Martin, J. Topology Guides {[online]}. [cit. 2023-10-15].
 Reinhardt, Z. Retopology in Blender {[online]}. [cit. 2023-10-1].
 \urlprefix\biburl{https://www.youtube.com/watch?v=X2GNyEUvpD4}
 
+\bibitem{bcnet}
+Jiang, B.; Zhang, J.; et al. BCNet: Learning Body and Cloth Shape from {A}
+  Single Image. \emph{CoRR}, volume abs/2004.00214, 2020, \eprint{2004.00214}.
+\urlprefix\biburl{https://arxiv.org/abs/2004.00214}
+
+\bibitem{shapeflow}
+Jiang, C.; Huang, J.; et al. ShapeFlow: Learnable Deformation Flows Among 3D
+  Shapes. In \emph{Advances in Neural Information Processing Systems},
+  volume~33, edited by H.~Larochelle; M.~Ranzato; R.~Hadsell; M.~Balcan;
+  H.~Lin, Curran Associates, Inc., 2020, pp. 9745--9757.
+\urlprefix\biburl{https://proceedings.neurips.cc/paper_files/paper/2020/file/6f1d0705c91c2145201df18a1a0c7345-Paper.pdf}
+
+\bibitem{p2m}
+Wang, N.; Zhang, Y.; et al. Pixel2Mesh: Generating 3D Mesh Models from Single
+  RGB Images. In \emph{ECCV}, 2018.
+
 \bibitem{mcculloch1943logical}
 McCulloch, W.~S.; Pitts, W. A logical calculus of the ideas immanent in nervous
   activity. \emph{The bulletin of mathematical biophysics}, volume~5, no.~4,
@@ -117,5 +133,26 @@ MathWorks. Convolutional Neural Network. [cit. 2020-12-25].
 Scarselli, F.; Gori, M.; et al. The Graph Neural Network Model. \emph{IEEE
   Transactions on Neural Networks}, volume~20, no.~1, 2009: pp. 61--80,
   \doi{10.1109/TNN.2008.2005605}.
+
+\bibitem{mgn}
+Bhatnagar, B.~L.; Tiwari, G.; et al. Multi-Garment Net: Learning to Dress 3D
+  People from Images. In \emph{{IEEE} International Conference on Computer
+  Vision ({ICCV})}, {IEEE}, oct 2019.
+
+\bibitem{p2mpp}
+Wen, C.; Zhang, Y.; et al. Pixel2Mesh++: Multi-View 3D Mesh Generation via
+  Deformation. In \emph{ICCV}, 2019.
+
+\bibitem{neuralFlow}
+Gupta, K.; Chandraker, M. Neural Mesh Flow: 3D Manifold Mesh Generationvia
+  Diffeomorphic Flows. \emph{CoRR}, volume abs/2007.10973, 2020,
+  \eprint{2007.10973}.
+\urlprefix\biburl{https://arxiv.org/abs/2007.10973}
+
+\bibitem{pointnet}
+Charles, R.~Q.; Su, H.; et al. PointNet: Deep Learning on Point Sets for 3D
+  Classification and Segmentation. In \emph{2017 IEEE Conference on Computer
+  Vision and Pattern Recognition (CVPR)}, 2017, pp. 77--85,
+  \doi{10.1109/CVPR.2017.16}.
 
 \end{thebibliography}

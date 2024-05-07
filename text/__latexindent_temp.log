@@ -1,10 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.12.1)  23 SEP 2023 19:56
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.12.1)  31 MAR 2024 16:00
 entering extended mode
-**c:/Users/tranv/Desktop/FIT_CVUT/Mgr/Diplomka/Material-picker/text/__latexinde
-nt_temp.tex
-
-(c:/Users/tranv/Desktop/FIT_CVUT/Mgr/Diplomka/Material-picker/text/__latexinden
-t_temp.tex
+**g:/devel/thesis/edgeflowthesis/text/__latexindent_temp.tex
+(g:/devel/thesis/edgeflowthesis/text/__latexindent_temp.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-27> xparse <2020-03-03> (FITthesis.cls
 Document Class: FITthesis 2019/12/23 CTU FIT standard class for theses
@@ -841,8 +838,8 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-c:/Users/tranv/Desktop/FIT_CVUT/Mgr/Diplomka/Material-picker/text/__latexindent
-_temp.tex:58: Undefined control sequence.
+g:/devel/thesis/edgeflowthesis/text/__latexindent_temp.tex:58: Undefined contro
+l sequence.
 \__hook begindocument/end ... {empty} \includepdf 
                                                   [page=-]{assignment.pdf} \...
 l.58 \begin{document}
@@ -903,12 +900,10 @@ LaTeX Warning: Reference `ch:experiments' on page 1 undefined on input line 15.
 
 LaTeX Warning: Reference `ch:conclusion' on page 1 undefined on input line 17.
 
-) [1
+[1
 
 
-] [2
-
-] (chapters/introduction.tex
+]) [2] (chapters/introduction.tex
 
 LaTeX Warning: Reference `ch:implementation' on page 3 undefined on input line 
 13.
@@ -920,11 +915,10 @@ LaTeX Warning: Reference `ch:experiments' on page 3 undefined on input line 15.
 
 LaTeX Warning: Reference `ch:conclusion' on page 3 undefined on input line 17.
 
-) [3
+[3
 
-] [4
 
-] (chapters/neural_network.tex
+]) [4] (chapters/neural_network.tex
 
 LaTeX Warning: Citation `mcculloch1943logical' on page 5 undefined on input lin
 e 1.
@@ -995,6 +989,7 @@ $[] \OT1/lmr/m/n/10.95 = (\OML/lmm/m/it/10.95 x[]; x[]; :::; x[]\OT1/lmr/m/n/10
 LaTeX Warning: Citation `matous' on page 5 undefined on input line 6.
 
 [5
+
 
 ]
 File: ./assets//perceptron.png Graphic file (type bmp)
@@ -1175,33 +1170,28 @@ LaTeX Warning: Citation `stanford' on page 13 undefined on input line 25.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-))) [13] [14] (chapters/analysis.tex) [15
+[13]))) [14]
 
-
-] [16
-
-]
-
-! LaTeX Error: File `chapters/multileap.tex' not found.
+! LaTeX Error: File `chapters/analysis.tex' not found.
 
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
 
 Enter file name: 
-^^@:79: Emergency stop.
+^^@:75: Emergency stop.
 <read *> 
          
-l.79 ^^I\input{chapters/multileap.tex}
-                                      \newpage\cleardoublepage^^M
+l.75 ^^I\input{chapters/analysis.tex}
+                                     \newpage\cleardoublepage^^M
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 16163 strings out of 412197
- 233070 string characters out of 2849633
- 616377 words of memory out of 3000000
- 35427 multiletter control sequences out of 15000+200000
+ 16158 strings out of 412197
+ 232883 string characters out of 2849633
+ 616319 words of memory out of 3000000
+ 35425 multiletter control sequences out of 15000+200000
  551855 words of font info for 70 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 80i,12n,88p,1419b,418s stack positions out of 5000i,500n,10000p,200000b,50000s
-Output written on __latexindent_temp.pdf (30 pages).
+ 80i,12n,88p,1389b,418s stack positions out of 5000i,500n,10000p,200000b,50000s
+Output written on __latexindent_temp.pdf (28 pages).

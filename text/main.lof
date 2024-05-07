@@ -27,6 +27,11 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Decimation applied on shirt 3D mesh \cite {decimation}\relax }}{17}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Retopology surface manually created lizard 3D mesh \cite {retopology}\relax }}{18}{figure.caption.24}%
 \addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of retrieve and deform shape reconstruction using BCNet \cite {bcnet}\relax }}{20}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of retrieve and deform shape reconstruction using ShapeFlow \cite {shapeflow}\relax }}{20}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Graph unpooling\cite {p2m}\relax }}{21}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Pixel2Mesh architecture overview \cite {p2m}\relax }}{21}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Neural Mesh flow architecture overview \cite {neuralFlow}\relax }}{21}{figure.caption.29}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

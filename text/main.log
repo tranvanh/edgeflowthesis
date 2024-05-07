@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.12.1)  30 MAR 2024 19:23
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.12.1)  1 APR 2024 20:37
 entering extended mode
 **g:/devel/thesis/edgeflowthesis/text/main.tex
 (g:/devel/thesis/edgeflowthesis/text/main.tex
@@ -1113,26 +1113,52 @@ File: ./assets//ShirtComparison.png Graphic file (type bmp)
  [17]
 File: ./assets//retopology.png Graphic file (type bmp)
 <./assets//retopology.png>
-) [18] (chapters/related_works.tex) [19
+) [18] (chapters/related_works.tex
+File: ./assets//bcnet.png Graphic file (type bmp)
+<./assets//bcnet.png>
 
 
-] [20
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./assets//shapeflow.png Graphic file (type bmp)
+<./assets//shapeflow.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19
+
 
 ]
-(chapters/implementation.tex) [21
+File: ./assets//p2m_unpooling.png Graphic file (type bmp)
+<./assets//p2m_unpooling.png>
 
-] [22
 
-] (chapters/experiments.tex) [23
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./assets//p2m.png Graphic file (type bmp)
+<./assets//p2m.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./assets//netflow.png Graphic file (type bmp)
+<./assets//netflow.png>
+[20]) [21] [22
+
+] (chapters/implementation.tex) [23
+
+] [24
 
 ]
-[24
-
-] (chapters/conclusion.tex) [25
+(chapters/experiments.tex) [25
 
 ] [26
 
-] (main.bbl
+] (chapters/conclusion.tex) [27
+
+] [28
+
+]
+(main.bbl
 bibitemlist
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--14
@@ -1171,64 +1197,65 @@ Underfull \hbox (badness 4378) in paragraph at lines 16--19
 [][][] [][]
  []
 
-[27
+[29
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
 [] [] [][][][][][][]\OML/lmm/m/it/10.95 :[][][] [] [][][][][][][][] [] [][][][]
 [][][][][][] [] [][][][] [][] [][][] [][] [][][][][][] [][] [][][][][][][][] []
 []
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 80--83
+Underfull \hbox (badness 3407) in paragraph at lines 96--99
 \TU/lmr/m/n/10.95 Currently Being Used in ML. [cit. 2020-12-25]. Available from
 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 []$[][][][][] [] [] [] [][][][][][][][][][][][][][][][][]\OML/lmm/m/it/10.95 :[
 ][][] [] [] [][] [][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][]
 [] [][]
  []
 
+[30]
 Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no   in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 4752) in paragraph at lines 95--98
+Underfull \hbox (badness 4752) in paragraph at lines 111--114
 \TU/lmr/m/n/10.95  Tutorial. Aug 2020, [cit. 2020-12-25]. Available from: []$[]
 [][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 [] [] [][][][][][]\OML/lmm/m/it/10.95 :[][][] [] [][][][][][][] [][] [][][][][]
 [][][][][] [][] [][][][][][][][][][][][] [] [][][][] [][] [][][][][] [][] [][] 
 [][]
  []
 
 
-Underfull \hbox (badness 7099) in paragraph at lines 108--111
+Underfull \hbox (badness 7099) in paragraph at lines 124--127
 []\TU/lmr/m/n/10.95 How Do Convolutional Layers Work in Deep Learning Neu-
  []
 
 
-Underfull \hbox (badness 5388) in paragraph at lines 108--111
+Underfull \hbox (badness 5388) in paragraph at lines 124--127
 \TU/lmr/m/n/10.95 ral Networks? April 2020, [cit. 2020-12-25]. Available from:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--111
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 []$[][][][][] [] [] [] [][][][][][][][][][][][][][][][][][][][][][]\OML/lmm/m/i
 t/10.95 :[][][] [] [][][][][][][][][][][][][] [][] [][][][][][] [][]
  []
 
-[28]) [29] [30
+) [31] [32
 
-] [31] [32
+] [33] [34
 
-] [33]
+] [35]
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1237,7 +1264,7 @@ t/10.95 :[][][] [] [][][][][][][][][][][][][] [][] [][][][][][] [][]
 
  (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5A34017C5D0C5049950FD8109C748A6F;4480.
+(rerunfilecheck)             Checksum: 5B3311CAD960327CB677B26D1B29BD43;4848.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1247,12 +1274,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17592 strings out of 412197
- 254796 string characters out of 2849633
- 654027 words of memory out of 3000000
- 36796 multiletter control sequences out of 15000+200000
+ 17635 strings out of 412197
+ 255582 string characters out of 2849633
+ 653361 words of memory out of 3000000
+ 36834 multiletter control sequences out of 15000+200000
  551863 words of font info for 71 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 80i,17n,88p,1373b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 80i,17n,88p,1373b,544s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (47 pages).
+Output written on main.pdf (49 pages).

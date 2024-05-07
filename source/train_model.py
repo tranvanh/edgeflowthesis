@@ -1,31 +1,30 @@
-import os
 import torch
-import numpy as np
-import utils.io_wrappers
-import deformation.deform_mesh
+from training.dataset import CustomDataset
+from training.gnn_model import GNN
+from training.trainer import Trainer
 
-from os.path import isfile, join
-from pytorch3d.structures import Meshes, Pointclouds
-from model.gnn_models import GNN
+train_path = "data/train"
+test_path = "data/test"
 
-dir_path = "shrec/prep"
+if torch.cuda.is_available():
+	print("CUDA avaliable")
+	device = torch.device("cuda:0")
+else:
+	print("CUDA unavailable")
+	device = torch.device("cpu")
 
 def main():
-    files = os.listdir(dir_path)
-    for f in files:
+	model = GNN(6,256,3).to(device)
+	print("Loading training data")
+	train_data = CustomDataset(train_path)
+	print("Loading test data")
+	test_data = CustomDataset(test_path)
+	print("Data loaded")
+	epochs = 500
 
-        # load trg_mesh, offsets, 
-
-        new_path = create_dir(f)
-        trg_mesh, scale , center = load_obj_wrapper(f"{dir_path}/{f}")
-        trg_torch = trg_mesh.verts_packed()
-        
-        gen_sphere(trg_torch.shape[0], new_path)
-        src_mesh = load_ply_wrapper(f"{new_path}/sphere.ply")
-        deform_offsets = fit_src_to_trg(f, src_mesh, trg_mesh)
-
-        save_obj_wrapper(src_mesh.offset_verts(deform_offsets), new_path, scale, center)
-        save_tensor(deform_offsets, "f{new_path}/offsets.pt")
+	trainer = Trainer(model, train_data, test_data, epochs)
+	trainer.train()
+	trainer.evaluate()
 
 if __name__ == "__main__":
-    main()
+	main()
