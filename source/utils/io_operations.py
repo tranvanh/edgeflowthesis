@@ -1,16 +1,17 @@
 import torch
 import os
 
-from pytorch3d.io import load_obj, save_obj, load_ply
 from pytorch3d.structures import Meshes, Pointclouds
-# Set the device
+from pytorch3d.io import (
+    load_obj,
+    save_obj,
+    load_ply
+)
+
 if torch.cuda.is_available():
     device = torch.device("cuda:0")
-    # print("CUDA available")
 else:
     device = torch.device("cpu")
-    # print("WARNING: CPU only, this will be slow!")
-
 
 def create_dir(file_path):
     if not os.path.exists(file_path):
@@ -83,6 +84,6 @@ def save_model(model, name):
     torch.save(model.state_dict(), f"{name}_weights.pth")
 
 def load_model(model_path, weight_path):
-    model = torch.load(path)
+    model = torch.load(model_path)
     model.load_state_dict(torch.load(weight_path))
     return model

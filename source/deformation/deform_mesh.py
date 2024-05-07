@@ -21,7 +21,6 @@ def mesh_loss(predicted, gt, sample_volume, w_normal, w_laplacian):
     w_chamfer = 1.0
     w_edge = 1.0
     
-    # We sample 10k points from the surface of each mesh
     sample_trg = sample_points_from_meshes(gt, sample_volume)
     sample_src = sample_points_from_meshes(predicted, sample_volume)
 

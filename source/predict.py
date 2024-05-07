@@ -1,15 +1,17 @@
 import os
 import torch
 from argparse import ArgumentParser
+from torch_geometric.data import Data
 
-from training.dataset import CustomDataset
 from training.gnn_model import GNN
+from utils.mesh_utils import gen_sphere
 from utils.io_operations import (
 	load_model,
 	load_obj_wrapper,
-	load_ply_wrapper
+	load_ply_wrapper,
+	save_obj_wrapper,
+	create_dir
 )
-from utils.mesh_utils import gen_sphere
 
 if torch.cuda.is_available():
 	print("CUDA avaliable")
@@ -18,29 +20,27 @@ else:
 	print("CUDA unavailable")
 	device = torch.device("cpu")
 
-
-# load checkpoint
 def main(args):
 
 	model = load_model(args.model, args.weights)
 	model = model.to(device)
 
-	target, scale, center = load_obj_wrapper(target)
-	gen_sphere(target.shape[0] , "tmp")
-	sphere_mesh, _, _ = load_ply_wrapper("tmp/sphere.ply")
-
+	target, scale, center = load_obj_wrapper(args.target)
 
 	x, edge_index = torch.concat((target.verts_packed(), target.verts_normals_packed()), axis=1), target.edges_packed()
 	edge_index_transpose = torch.transpose(edge_index, 0, 1)
 	data = Data(x.to(device), edge_index_transpose)
+
+	# Create a primitive sphere according to the number of points in the target mesh
+	create_dir("tmp")
+	gen_sphere(x.shape[0] , "tmp")
+	sphere_mesh, _, _ = load_ply_wrapper("tmp/sphere.ply")
 
 	model.eval()
 	pred = model(data)
 	new_mesh = sphere_mesh.offset_verts(pred)
 
 	save_obj_wrapper(new_mesh, "predicted.obj", scale, center)
-	os.remove("tmp")
-
 
 
 if __name__ == "__main__":

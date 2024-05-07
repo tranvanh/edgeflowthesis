@@ -1,6 +1,5 @@
 import torch
 import torch.nn.functional as F
-
 from tqdm import tqdm
 from torch_geometric.loader import DataLoader
 
@@ -66,3 +65,4 @@ class Trainer(object):
 				test_loss += F.mse_loss(out, y[0]).item()
 
 		test_loss /= num_batches
+		print(f"Test Error: Avg loss: {test_loss:>8f}")
