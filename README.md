@@ -14,3 +14,5 @@ There are three main entry scripts: `data_prep.py`, `train_model.py`, `predict.p
 * `data_prep.py` Script used for preprocessing data. Computing deformation offsets by minimizing Chamfer distance. 
 * `train_model.py` is used for training and evaluating the model. The training step can be skipped as well as the evaluation process. We can load checkpoint weights and continue training or only evaluating the prowess of the model.
 * `predict.py` is fully functional pipeline for predicting optimized mesh. The result `predicted.obj` is saved in the root directory.
+
+!We suggest running scripts with `-B` flag to avoid python system caching, which can cause to misleading progress status
