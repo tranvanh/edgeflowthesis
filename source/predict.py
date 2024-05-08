@@ -45,7 +45,7 @@ def main(args):
 	new_mesh = sphere_mesh.offset_verts(pred)
 	predicted_path = "predicted.obj"
 	save_obj_wrapper(new_mesh, predicted_path, scale, center)
-	print(f"Pridection saved at \'{predicted_path}\'")
+	print(f"Prediction saved at \'{predicted_path}\'")
 
 if __name__ == "__main__":
 	pars = ArgumentParser()

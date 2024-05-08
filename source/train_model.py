@@ -14,11 +14,6 @@ else:
 
 def main(args):
 	model = GNN(6,256,3).to(device)
-	# load checkpoint weights if available
-	if not args.weights == None:
-		print("Weights loaded")
-		model.load_state_dict(torch.load(args.weights))
-
 	trainer = Trainer(model, args.epochs)
 	if not args.skip_training:
 		print("Loading training data")
@@ -41,9 +36,6 @@ if __name__ == "__main__":
 					  type=str,
 					  default="data/test",
 					  help='[path to test data]{data/test}')
-	pars.add_argument('--weights',
-					  type=str,
-					  help='[path to model weights]')
 	pars.add_argument('--epochs',
 					  type=int,
 					  default=500,

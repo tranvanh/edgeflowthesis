@@ -39,7 +39,7 @@ class Trainer(object):
 		avg_train_loss = train_loss/size
 		if avg_train_loss < current_min:
 			current_min = avg_train_loss
-			save_model(self.model, "model_checkpoint/checkpoint")
+			save_model(self.model, "model/best_model")
 			print("SAVED")
 		print(f"Train Error: Avg loss: {avg_train_loss:>8f}")
 		return current_min
@@ -48,7 +48,7 @@ class Trainer(object):
 		print("Model training started")
 		train_loader = DataLoader(train_data)
 		current_min =  float('inf')
-		create_dir("model_checkpoint")
+		create_dir("model")
 		for i in range(self.epochs):
 			print(f"EPOCH {i+1}/{self.epochs}")
 			current_min = self.train_loop(train_loader, current_min)
