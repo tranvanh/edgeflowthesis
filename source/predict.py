@@ -22,7 +22,7 @@ else:
 
 def main(args):
 	print("Loading model")
-	model = load_model(model_path, weights_path)
+	model = load_model(args.model, args.weights)
 	model = model.to(device)
 	print("model Loaded")
 
@@ -54,11 +54,11 @@ if __name__ == "__main__":
 					  help='<path to target mesh>')
 	pars.add_argument('--model',
 					  type=str,
-					  default="model/best_model.pth",
+					  default="pretrained_model/model.pth",
 					  help='[path to test data]{/model/best_model.pth}')
 	pars.add_argument('--weights',
 					  type=str,
-					  default="data/best_model_weights.pth",
+					  default="pretrained_model/model_weights.pth",
 					  help='[path to model weights]{/data/best_model_weights.pth}')
 
 	args = pars.parse_args()
