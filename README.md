@@ -6,7 +6,18 @@ The goal was to provide a fully functional pipeline for edge flow corrections by
 ## Setup
 All required depencies are listed in `environment.txt` and can be installed using `conda create -n <environment-name> --file environment.txt`
 
-Required raw data used for preprocessing can be found [here](https://drive.google.com/file/d/17uD91g4mYJFJVbTcvB5HjdpWmJjyaxPY/view?usp=sharing) and precomputated data for training, with proper hierarchy can be downloaded [here](https://drive.google.com/file/d/1GQAzLRa3GJKYrStXa_jFwOLSNYPcB5Lb/view?usp=sharing)
+Required raw data used for preprocessing can be found [here](https://drive.google.com/file/d/17uD91g4mYJFJVbTcvB5HjdpWmJjyaxPY/view?usp=sharing) and precomputated data for training, with proper hierarchy can be downloaded [here](https://drive.google.com/file/d/1GQAzLRa3GJKYrStXa_jFwOLSNYPcB5Lb/view?usp=sharing).
+
+Each precomputed sample contains:
+
+`deformed.obj` - end result, when offsets are applied to the sphere primitive
+
+`offsets.pt` - ground truth offsets
+
+`target.obj` - target shape
+
+`sphere.obj` - sphere primiteve
+
 
 ## Run
 There are three main entry scripts: `data_prep.py`, `train_model.py`, `predict.py`. Each script has its optional arguments with which it can be called. Invoke `--help` to see available options and their defaults
