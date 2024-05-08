@@ -1,3 +1,4 @@
 source/data
 source/shrec
 source/model
+/source/tmp/*.ply
