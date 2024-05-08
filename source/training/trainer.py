@@ -39,7 +39,7 @@ class Trainer(object):
 		avg_train_loss = train_loss/size
 		if avg_train_loss < current_min:
 			current_min = avg_train_loss
-			save_model(self.model, "model/best_model")
+			save_model(self.model, "model/checkpoint_model")
 			print("SAVED")
 		print(f"Train Error: Avg loss: {avg_train_loss:>8f}")
 		return current_min
